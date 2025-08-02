@@ -32,31 +32,36 @@ Cada modelo fue evaluado con **validación cruzada 10-fold** utilizando la métr
 
 ---
 
-## 📈 Distribución del Balanced Accuracy
 
-Se graficó la distribución del balanced accuracy usando estimación de densidad (KDE), junto con la curtosis para evaluar estabilidad.
+## 📈 Visualización de rendimiento
 
-Todos los modelos presentan **curtosis negativa** (platicúrtica), lo que indica una dispersión ligeramente mayor en sus rendimientos, pero sin extremos. Esto sugiere que el desempeño es **estable y confiable**.
+### 📊 Balanced Accuracy por Modelo
 
-![Distribución del Balanced Accuracy](imagen1.png)
+El gráfico a continuación muestra la distribución real de los valores de balanced accuracy obtenidos en validación cruzada para cada modelo. Se visualizan mediante boxplots acompañados de los puntos individuales de cada fold.
+
+Esto permite comparar tanto el rendimiento promedio como la estabilidad de cada clasificador.
+
+![Boxplot de Balanced Accuracy](imagen1.png)
 
 ---
 
 ## 📌 Conclusiones
 
-- Todos los modelos lograron un balanced accuracy superior al 95%, lo que indica alta capacidad predictiva.
-- Modelos simples como la **Regresión Logística** y el **SVM lineal** fueron tan eficaces como el Random Forest, lo que refuerza su valor en contextos clínicos donde la interpretabilidad es importante.
-- El análisis de la curtosis revela que el rendimiento es estable, sin valores extremos que comprometan la confiabilidad.
+- Los tres modelos presentan un **rendimiento elevado y consistente**, con valores de balanced accuracy superiores al 90%.
+- **Regresión Logística** y **SVM lineal** obtuvieron el **mayor rendimiento promedio (0.97)** y además una **variabilidad muy baja**, lo que sugiere que son modelos estables y confiables.
+- **Random Forest**, si bien alcanzó un rendimiento competitivo (0.95), mostró una **ligeramente mayor dispersión** en sus resultados, posiblemente debido a su complejidad y sensibilidad a los datos de entrenamiento.
+- El uso de **boxplots con puntos reales** permite una evaluación más completa que solo el promedio, ya que revela la **robustez de cada modelo frente a diferentes particiones de datos**.
 
 ---
 
 ## ✅ Recomendaciones
 
-- Priorizar **modelos interpretables** como Regresión Logística si se busca transparencia clínica.
-- Evaluar también otras métricas: **precisión, recall, F1-score, curva ROC-AUC**.
-- Visualizar la **matriz de confusión** para detectar errores relevantes.
-- Realizar **ajuste de hiperparámetros con cuidado**, ya que el rendimiento ya es estable.
-- Documentar versiones de los datos y modelos para asegurar **reproducibilidad**.
+- Priorizar modelos como **Regresión Logística** o **SVM lineal** para este tipo de problema, ya que combinan **precisión, estabilidad e interpretabilidad**.
+- Utilizar siempre **validación cruzada** y métricas como balanced accuracy, especialmente cuando las clases están desbalanceadas.
+- Incorporar análisis de **matriz de confusión**, **precision**, **recall** y **F1-score** para una evaluación más profunda del comportamiento del modelo.
+- Realizar análisis de **importancia de variables** o aplicar técnicas de **reducción de dimensionalidad** para mejorar la interpretabilidad sin perder rendimiento.
+- Visualizar no solo el promedio, sino también la **variabilidad del modelo** para tomar decisiones más robustas.
+
 
 ---
 
