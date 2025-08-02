@@ -6,8 +6,6 @@ Este proyecto aplica algoritmos de Machine Learning para predecir si una muestra
 
 ## 📂 Dataset
 
-- **Fuente:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original))
-
 - **Variable objetivo:** Clasificación del tumor (2: benigno, 4: maligno)
 
 ---
