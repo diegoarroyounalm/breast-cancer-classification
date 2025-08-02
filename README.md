@@ -62,10 +62,8 @@ Todos los modelos presentan **curtosis negativa** (platicúrtica), lo que indica
 
 ---
 
-## 🚀 Cómo usar este repositorio
+## 🚀 Autor
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/breast-cancer-classification.git
-   cd breast-cancer-classification
-
+**Diego Arroyo**  
+📧 diegojulioarroyo@gmail.com  
+🔗 [Mi LinkedIn](https://www.linkedin.com/in/diego-arroyo-b2153b229/) 
